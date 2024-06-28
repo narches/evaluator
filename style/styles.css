@@ -1,0 +1,103 @@
+/* (c) 2024 Nnachi, Joseph Otu */
+
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.interaction-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.interaction-item:hover {
+    background-color: #f0f0f0;
+}
+
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+
+h1, h2 {
+    color: #000000;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    display: block;
+    width: 40%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    align-items: center;
+}
+
+button:hover {
+    background-color: transparent;
+    border-radius: 5px;
+    border: 2px solid #007bff;
+    color: #007bff;
+}
+
+#result {
+    margin-top: 20px;
+    padding: 10px
+}
+
+
+a {
+    float: right;
+    padding: 10px;
+    font-size: 15px;
+    color: #007bff;
+}
+
+a:hover {
+    border: 1px solid #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+}

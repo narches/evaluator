@@ -1,0 +1,79 @@
+<!-- (c) 2024 Joseph Nnachi -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock Evaluation Checker</title>
+    <link rel="stylesheet" href="style/styles.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <h1>Mock Evaluator</h1>
+        <form class="section">
+            <h3>Mentor Self-Evaluation</h3>
+            <label>
+                    Did you contact every student on your roster this week?
+                <select id="contacted-students">
+                    <option value="select"> Select &#9662</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+                </label>
+            <label>
+                    Self-Evaluation Completed
+                    <select id="self-evaluation">
+                        <option value="select"> Select &#9662</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+            </label>
+            <label>
+                    Did you complete the Mentor Development activity this week?
+                    <select id="mentor-development">
+                        <option value="select"> Select &#9662</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                </select>
+            </label>
+            <label>
+                    Did you contact every student with an outstanding ticket this week?
+                    <select id="contacted-tickets">
+                        <option value="select"> Select &#9662</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+            </label>
+            <label>
+                    Did you complete the task outlined in the Roster Management Guide?
+                    <select id="roster-management">
+                        <option value="select"> Select &#9662</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+            </label>
+            <label>
+                    Did you document every conversation with a student?
+                    <select id="documented-conversations">
+                        <option value="select"> Select &#9662</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+            </label>
+                <button type="button" id="evaluateMentor">Evaluate</button>
+                <br>
+                <br>
+                <a href="interaction.html">Next</a>
+        </form>
+        <div id="result"></div>
+    </div>
+    <footer> &copy
+        <script>
+            document.write(new Date().getFullYear());
+        </script>, Joseph Nnachi
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!-- (c) 2024 Nnachi Joseph -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mock Interaction Checker</title>
+  <link rel="stylesheet" href="style/istyles.css">
+  <link rel="icon" href="favicon.ico">
+</head>
+<body>
+  <div class="container">
+    <h2>Mock Interaction Checker</h2>
+    <form id="evaluationForm">
+      <fieldset>
+        <legend>Made Contact</legend>
+        Did the student responded to the Mentor's outreach and was able to 
+        discuss challenges/concerns together.
+        Emoji or Thank You Reply: Did the student 
+        respond to you outreach with an emoji or a 
+        brief thank you.
+        Did you send an outreach was sent but no response received from the student.
+        <label for="madeContact">Made Contact?</label>
+        <select id="madeContact" name="madeContact">
+            <option value="#"> Select &#9662</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Professionalism</legend>
+            <!-- Add professionalism fields here (checkboxes, radio buttons, etc.) -->
+            Did you maintain professional boundaries 
+            (demonstrated respect and kindness, acted within the role of a 
+            mentor, upheld ethical standards, respected privacy and 
+            confidentiality). <br>Used appropriate verbal and written language 
+            (correct grammar, punctuation, and spelling, communicated in 
+            a manner that is respectful, clear, and appropriate for the 
+            context. <br>Did used formal language and avoided slang or jargon that 
+            may be confusing or offensive), and used branding accuracy 
+            (PathwayConnect, BYU-Pathway, BYU-Pathway Worldwide, 
+            etc).
+            <label for="professionalism">Did you maintain professionalism?</label>
+            <select id="professionalism" name="professionalism">
+                <option value="#"> Select &#9662</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </fieldset>
+
+
+      <fieldset>
+        <legend>Accuracy</legend>
+        <!-- Add accuracy fields here -->
+            Did you provided information based 
+            on a KB article if appropriate, provided correct 
+            resources to the student (i.e., tutoring links, tutorials, 
+            etc.) and included personal experiences appropriately, 
+            and delivered instructions clearly. <br>
+            NOTE:  A KB article should have been used but the information in the article 
+            did not have enough information to help the 
+            Mentor address student concerns or questions. In this 
+            situation, you should have consulted with the 
+            MSA for information. If the MSA did not have 
+            information, KB feedback, MSA inquiries, or Mentoring 
+            tickets should be used. 
+            <label for="accuracy">Did you use accurate sources?</label>
+            <select id="accuracy" name="accuracy">
+                <option value="#"> Select &#9662</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Methodology</legend>
+        <!-- Add methodology fields here -->
+            Was methodology used? <br>
+            Did you framed your role, asked at 
+            least 2 assessing questions, and helped the student 
+            identify a next step?
+            <label for="methodology">Did you apply methodology in your conversation?</label>
+            <select id="methodology" name="methodology">
+                <option value="#"> Select &#9662</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+            
+      </fieldset>
+
+      <fieldset>
+        <legend>Documentation</legend>
+        <!-- Add documentation fields here -->
+        Was the conversation documented correctly? Did you
+        documented the entire conversation, and included 
+        details about interaction for Zoom/Phone Calls.
+        <br>Is the conversation documented is 
+        clearly incomplete, are the date/time stamps are missing 
+        causing it to be unclear when the interaction occurred, 
+        Does the Student Response Field reflect accurately 
+        the type of interaction that was had, Is any field left 
+        blank or have inaccurate information,
+        does match the subject of the interaction, Has 
+        multiple outreaches on separate topics have been 
+        documented in the same activity, or did you cite a KB article in your
+        documentation in a way that it is 
+        clear they used one to provide information for the 
+        student. <br> Did you include details about Interaction for 
+        Zoom/Phone Calls. <br>
+        Does your Documentation shows that you responded
+        within 24 hours. <br>
+        Was your documentation submitted late (after 11:59 p.m. Friday of a given 
+        week) <br>
+        Are there any interactions
+        documented?
+        <label for="documentation">Did you document accurately?</label>
+        <select id="documentation" name="documentation">
+            <option value="#"> Select &#9662</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+      </fieldset>
+
+      <button type="button" id="calculateScore">Calculate Score</button>
+      <div id="scoreResult"></div>
+      <br>
+      <a href="evaluator.html">Previous</a>
+    </form>
+
+    <footer> &copy
+      <script>
+          document.write(new Date().getFullYear());
+      </script>, Joseph Nnachi
+    </footer>
+  </div>
+  
+  <script src="js/script.js"></script>
+</body>
+</html>
+
